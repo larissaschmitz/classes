@@ -25,12 +25,16 @@
     $livro1->titulo = 'Batman';
     $livro1->autor = 'Frank Miller';
     $livro1->anoPublicacao = '1988';
-
     
     $livro2 = new Livro();
     $livro2->titulo = '20 Mil Léguas Submarinas';
     $livro2->autor = 'Júlio Verne';
     $livro2->anoPublicacao = '1800';
+
+    $livro3 = new Livro();
+    $livro3->titulo = 'Daisy Jones';
+    $livro3->autor = 'Taylor J. R.';
+    $livro3->anoPublicacao = '2018';
 
     //imprime tudo var_dump($livro1);
     //apenas uma informação echo $livro1->titulo;
@@ -38,7 +42,23 @@
     // $livro1->abrirPagina(10);
      echo $livro1->mostrarTitulo();
      echo "<br>";
+     echo $livro1->abrirPagina(27);
+     echo "<br><br>";
+
      echo $livro2->mostrarTitulo();
+     echo "<br>";
+     echo $livro2->autor;
+     echo "<br>";
+     echo $livro1->abrirPagina(108);
+     echo "<br><br>";
+
+     echo $livro3->mostrarTitulo();
+     echo "<br>";
+     echo $livro3->autor;
+     echo "<br>";
+     echo $livro1->abrirPagina(27);
+     echo "<br>";
+     echo $livro3->anoPublicacao;
 
 
 ?>

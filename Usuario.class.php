@@ -37,19 +37,28 @@
 
 
      //imprime tudo 
-     var_dump($usuario1);
+    //var_dump($usuario1);
     //apenas uma informação 
-    echo "<br>";
-    echo $usuario2->nome;
-    echo "<br>";
+    //echo "<br><br>";
+    //echo $usuario2->nome;
+    //echo "<br><br>";
 
 
     // $livro1->abrirPagina(10);
     echo $usuario1->falar();
     echo "<br>";
-    echo $usuario2->efetuarLogin('lizwebber', '000000000');
+    echo $usuario1->efetuarLogin($usuario1->login, $usuario1->senha);
     echo "<br>";
-    echo $usuario1->fazAniversario;
+    echo $usuario1->fazAniversario();
+    echo "<br><br>";
+
+
+    echo $usuario2->falar();
+    echo "<br>";
+    echo $usuario2->efetuarLogin($usuario2->login, $usuario2->senha);
+    echo "<br>";
+    echo $usuario2->fazAniversario();
+
 
 
 ?>
